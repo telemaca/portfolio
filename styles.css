@@ -22,13 +22,50 @@ body {
 }
 .main-content {
     text-align: center;
-    background-color: #58A4B0;
     padding: 50px;
     /* color: #FFFFFF; */
 }
 
-.main-content-section {
-    background-color: #DAA49A;
+.presentation {
+    background-color: #58A4B0;
+}
+
+.skills {
+    background-color: #4b4b79;
+}
+
+.skills-title {
+    color: #eeeef1;
+    font-family: 'Calistoga';
+    font-weight: 300;
+    font-size: 36px;
+    margin: 0 0 50px 0;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #eeeef1;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.skill {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.skill-container {
+    background-color: #eeeef1;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0 25px;
+    border-radius: 50%;
+}
+
+.skill-img {
+    width: 130px;
+    padding-top: 20px;
 }
 
 .owner-photo {
@@ -38,10 +75,13 @@ body {
 
 .owner-name {
     font-family: 'Pacifico';
+    font-size: 50px;
+    margin-bottom: 0;
 }
 
 .owner-information {
     font-family: 'Raleway';
+    font-size: 18px;
 }
 
 .footer {
