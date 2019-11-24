@@ -6,66 +6,31 @@ body {
     background-color: #373F51;
 }
 
-.header-links {
+.nav {
     list-style: none;
     font-family: 'Raleway';
     color: rgb(236, 237, 240);
     font-weight: bold;
     margin: 0;
     padding: 20px 30px;
+    display: flex;
+    align-items: center;
 }
 
-.header-link {
-    display: inline-block;
+.nav-item {
     padding: 15px;
     cursor: pointer;
 }
 .main-content {
-    text-align: center;
     padding: 50px;
-    /* color: #FFFFFF; */
 }
 
 .presentation {
     background-color: #58A4B0;
-}
-
-.skills {
-    background-color: #4b4b79;
-}
-
-.skills-title {
-    color: #eeeef1;
-    font-family: 'Calistoga';
-    font-weight: 300;
-    font-size: 36px;
-    margin: 0 0 50px 0;
-    padding-bottom: 20px;
-    border-bottom: 4px solid #eeeef1;
-}
-
-.skills-list {
-    list-style: none;
-}
-
-.skill {
-    display: inline-block;
-    padding: 20px;
-    vertical-align: top;
-}
-
-.skill-container {
-    background-color: #eeeef1;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    margin: 0 25px;
-    border-radius: 50%;
-}
-
-.skill-img {
-    width: 130px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .owner-photo {
@@ -84,15 +49,59 @@ body {
     font-size: 18px;
 }
 
+.skills {
+    background-color: #4b4b79;
+    
+}
+
+.skills-title {
+    color: #eeeef1;
+    font-family: 'Calistoga';
+    font-weight: 300;
+    font-size: 36px;
+    margin: 0 0 50px 0;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #eeeef1;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    padding: 20px;
+}
+
+.skill-container {
+    background-color: #eeeef1;
+    width: 200px;
+    height: 200px;
+    margin: 0 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-img {
+    width: 130px;
+}
+
 .footer {
     font-family: 'Raleway';
     background-color: #3D7068;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-column {
-    padding: 19px 0 20px 50px;
-    display: inline-block;
-    vertical-align: middle;
+    padding: 20px 50px;
 }
 
 .footer-links-title {
@@ -124,4 +133,5 @@ body {
 .footer-copyright-text {
     margin-bottom: 0;
     color: honeydew;
+    font-family: 'Raleway';
 }
