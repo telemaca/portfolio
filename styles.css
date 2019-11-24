@@ -20,6 +20,9 @@ body {
 .nav-item {
     padding: 15px;
     cursor: pointer;
+    font-family: 'Raleway';
+    color: rgb(236, 237, 240);
+    text-decoration: none;
 }
 .main-content {
     padding: 50px;
@@ -54,7 +57,7 @@ body {
     
 }
 
-.skills-title {
+.list-title {
     color: #eeeef1;
     font-family: 'Calistoga';
     font-weight: 300;
@@ -65,7 +68,7 @@ body {
     text-align: center;
 }
 
-.skills-list {
+.main-contest-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -73,11 +76,11 @@ body {
     align-items: center;
 }
 
-.skill {
-    padding: 20px;
-}
+/* .skill {
+    padding: 20px; 
+} */
 
-.skill-container {
+.list-container {
     background-color: #eeeef1;
     width: 200px;
     height: 200px;
@@ -90,6 +93,16 @@ body {
 
 .skill-img {
     width: 130px;
+}
+
+.proyects {
+    background-color: teal;
+}
+
+.list-element {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .footer {
@@ -111,6 +124,11 @@ body {
 .footer-links {
     list-style: none;
     padding-left: 0;
+}
+
+.footer-social-network-user {
+    color: black;
+    text-decoration: none;
 }
 
 .footer-quote {

@@ -11,47 +11,54 @@
     
     <div class="header">
         <ul class="nav">
-            <li class="nav-item">SOBRE MI</li>
-            <li class="nav-item">SKILLS</li>
-            <li class="nav-item">PROYECTOS</li>
-            <li class="nav-item">CONTACTOS</li>
+            <a href="#aboutme"><li class="nav-item">SOBRE MI</li></a>
+            <a href="#skills"><li class="nav-item">SKILLS</li></a>
+            <a href="#proyects"><li class="nav-item">PROYECTOS</li></a>
+            <a href="#socialnetworks"><li class="nav-item">CONTACTOS</li></a>
         </ul>
     </div>
 
     
-    <div class="main-content presentation">
-            <img class="owner-photo" src="imgs/foto2.jpg" />
-            <h1 class="owner-name">Florencia Holzmann</h1>
-            <p class="owner-information">Estudiante de desarrollo Frontend / Traductora&Editora / Amante de idiomas inútiles</p>
-            <p class="owner-information">Soy excesivamente curiosa y me encanta aprender cosas nuevas. Vivo en el campo. En otra vida viví en la Grecia Antigua.</p>
+    <div id="aboutme" class="main-content presentation">
+        <img class="owner-photo" src="imgs/foto2.jpg" />
+        <h1 class="owner-name">Florencia Holzmann</h1>
+        <p class="owner-information">Estudiante de desarrollo Frontend / Traductora&Editora / Amante de idiomas inútiles</p>
+        <p class="owner-information">Soy excesivamente curiosa y me encanta aprender cosas nuevas. Vivo en el campo. En otra vida viví en la Grecia Antigua.</p>
     </div>
 
-    <div class="main-content skills">
-        <h2 class="skills-title">SKILLS</h2>
-        <ul class="skills-list">
-            <div class="skill-container"><li class="skill"><img src="imgs/html.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/css.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/js.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/bootstrap.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/firebase.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/git.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/react.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/responsive.png" class="skill-img"></li></div>
-            <div class="skill-container"><li class="skill"><img src="imgs/sass.png" class="skill-img"></li></div>
+    <div id="skills" class="main-content skills">
+        <h2 class="list-title">SKILLS</h2>
+        <ul class="main-contest-list">
+            <div class="list-container"><li class="skill"><img src="imgs/html.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/css.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/js.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/bootstrap.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/firebase.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/git.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/react.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/responsive.png" class="skill-img"></li></div>
+            <div class="list-container"><li class="skill"><img src="imgs/sass.png" class="skill-img"></li></div>
         </ul>
-
     </div>
-    
+
+    <div id="proyects" class="main-content proyects">
+            <h2 class="list-title">PROYECTOS</h2>
+            <ul class="main-contest-list">
+                <div class="list-container"><li class="list-element">CARD</li></div>
+                <div class="list-container"><li class="list-element">WIKI</li></div>
+                <div class="list-container"><li class="list-element">QUOTES</li></div>
+            </ul>
+        </div>
     
     <div class="footer">
         <div class="footer-column">
-            <p class="footer-links-title">REDES</p>
+            <p id="socialnetworks" class="footer-links-title">REDES</p>
             <ul class="footer-links">
-                <li class="footer-link"><i class="fab fa-twitter"></i> <span class="footer-social-network-user">telemaca</span></li>
-                <li class="footer-link"><i class="fab fa-facebook"></i> <span class="footer-social-network-user">Florencia Holzmann</span></li>
-                <li class="footer-link"><i class="fab fa-instagram"></i> <span class="footer-social-network-user">telemaca86</span></li>
-                <li class="footer-link"><i class="fab fa-linkedin-in"></i> <span class="footer-social-network-user">Florencia Holzmann</span></li>
-                <li class="footer-link"><i class="fab fa-github"></i> <span class="footer-social-network-user">telemaca</span></li>
+                <li class="footer-link"><i class="fab fa-twitter"></i> <a target="_blank" href="https://www.twitter.com/telemaca"><span class="footer-social-network-user">telemaca</span></a></li>
+                <li class="footer-link"><i class="fab fa-facebook"></i> <a target="_blank" href="https://www.facebook.com/Telemaca"><span class="footer-social-network-user">Florencia Holzmann</span></a></li>
+                <li class="footer-link"><i class="fab fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/telemaca86"><span class="footer-social-network-user">telemaca86</span></a></li>
+                <li class="footer-link"><i class="fab fa-linkedin-in"></i> <a target="_blank" href="https://www.linkedin.com/in/florencia-holzmann-39189a71/"><span class="footer-social-network-user">Florencia Holzmann</span></a></li>
+                <li class="footer-link"><i class="fab fa-github"></i> <a target="_blank" href="https://www.github.com/telemaca"><span class="footer-social-network-user">telemaca</span></a></li>
             </ul>
         </div>
         <div class="footer-column">
