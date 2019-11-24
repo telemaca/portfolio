@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #373F51;
+}
+
+.header-links {
+    list-style: none;
+    font-family: 'Raleway';
+    color: rgb(236, 237, 240);
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+.main-content {
+    text-align: center;
+    background-color: #58A4B0;
+    padding: 50px;
+    /* color: #FFFFFF; */
+}
+
+.main-content-section {
+    background-color: #DAA49A;
+}
+
+.owner-photo {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.owner-name {
+    font-family: 'Pacifico';
+}
+
+.owner-information {
+    font-family: 'Raleway';
+}
+
+.footer {
+    font-family: 'Raleway';
+    background-color: #3D7068;
+}
+
+.footer-column {
+    padding: 20px 0 20px 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-links-title {
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-quote {
+    background-color: rgb(71, 129, 121);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.footer-quote-text {
+    width: 400px;
+}
+
+.footer-copyright {
+    background-color: #373F51;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 5px 0 16px 0;
+}
+
+.footer-copyright-text {
+    margin-bottom: 0;
+    color: honeydew;
+}
