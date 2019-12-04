@@ -2,11 +2,11 @@ body {
     margin: 0;
 }
 
-.header {
+header {
     background-color: #373F51;
 }
 
-.nav {
+.nav-items {
     list-style: none;
     font-family: 'Raleway';
     color: rgb(236, 237, 240);
@@ -57,7 +57,7 @@ body {
     
 }
 
-.list-title {
+.section-title {
     color: #eeeef1;
     font-family: 'Calistoga';
     font-weight: 300;
@@ -105,9 +105,55 @@ body {
     font-weight: bold;
 }
 
-.footer {
+.contactme {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+.contact-me-form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-information {
+    padding: 20px;
+    font-family: 'Raleway';
+}
+
+.contact-me-form-input {
+    border-radius: 5px;
+    background-color: rgb(191, 196, 204);
+    font-family: 'Raleway';
+    height: 25px;
+    font-size: 16px;
+}
+
+.reason-for-contact {
+    border-style: none;
+}
+
+.send-btn {
+    margin: 0 auto;
+    width: 35%;
+    font-size: 18px;
+    background-color: #373F51;
+    border-radius: 10px;
+    border-style: none;
+    color: #eeeef1
+}
+
+
+footer {
     font-family: 'Raleway';
     background-color: #3D7068;
+}
+
+.footer-main-part {
     display: flex;
     justify-content: space-between;
     align-items: center;
