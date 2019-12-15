@@ -34,9 +34,9 @@ header {
 }
 
 .nav-item:hover {
+    letter-spacing: 4px;
     color: #adb1b9;
-    border-bottom: 1.5px solid #adb1b9;
-    border-right: 1.5px solid #adb1b9;
+    border-bottom: 1.5px dotted #adb1b9;
 }
 
 .proyects-nav-item {
@@ -45,6 +45,7 @@ header {
 
 .submenu {
     list-style: none;
+    width: 200px;
     background-color: #373F51;
     padding-left: 0;
     position: absolute;
