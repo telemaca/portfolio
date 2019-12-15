@@ -196,6 +196,44 @@ label {
     top: calc(50% - 8px);
 }
 
+.invalid-icon, .valid-icon {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 10px;
+    display: none;
+}
+
+.invalid-icon {
+    color: firebrick;
+}
+
+.valid-icon {
+    color: green;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid firebrick;
+}
+
+input:valid:not(:placeholder-shown) ~ .valid-icon {
+    display: block;
+}
+
+input:invalid:not(:placeholder-shown) ~ .invalid-icon {
+    display: block;
+}
+
 .contact-me-form-input:not(textarea) {
     height: 35px;
     padding-left: 35px;
@@ -226,6 +264,14 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s;
+}
+
+.send-btn:hover {
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 1px dashed #eeeef1;
+    background: none;
 }
 
 
