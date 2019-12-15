@@ -4,28 +4,70 @@ body {
 
 header {
     background-color: #373F51;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
 }
 
+.nav-items > li {
+    margin: 20px 10px 25px 10px;
+}
 .nav-items {
     list-style: none;
     font-family: 'Raleway';
     color: rgb(236, 237, 240);
     font-weight: bold;
     margin: 0;
-    padding: 20px 30px;
     display: flex;
+    padding-left: 0;
     align-items: center;
 }
 
 .nav-item {
-    padding: 15px;
+    margin: 15px;
+    padding: 3px 10px 10px 10px;
     cursor: pointer;
     font-family: 'Raleway';
     color: rgb(236, 237, 240);
     text-decoration: none;
+    transition: .3s;
 }
+
+.nav-item:hover {
+    color: #adb1b9;
+    border-bottom: 1.5px solid #adb1b9;
+    border-right: 1.5px solid #adb1b9;
+}
+
+.proyects-nav-item {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    background-color: #373F51;
+    padding-left: 0;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: none;
+}
+
+.submenu-item {
+    padding: 20px;
+}
+
+.proyects-nav-item:hover .submenu {
+    display: block;
+}
+
+.submenu-item:hover {
+    cursor: pointer;
+    background-color: darkslategrey;
+}
+
 .main-content {
-    padding: 50px;
+    padding: 100px 50px 50px 50px;
 }
 
 .presentation {
@@ -34,6 +76,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* padding-top: 100px; */
 }
 
 .owner-photo {
@@ -110,7 +153,6 @@ header {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-
 }
 
 .contact-me-form {
@@ -120,31 +162,69 @@ header {
     margin: 0 auto;
 }
 
+label {
+    padding-bottom: 5px;
+}
+
 .contact-information {
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+}
+
+.form-imput-container {
+    position: relative;
 }
 
 .contact-me-form-input {
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 2px;
     background-color: rgb(191, 196, 204);
     font-family: 'Raleway';
-    height: 25px;
     font-size: 16px;
+    border: 0;  
+    box-sizing: border-box;
+}
+
+.user-icon, .mail-icon {
+    color: darkslategray;
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 8px);
+}
+
+.contact-me-form-input:not(textarea) {
+    height: 35px;
+    padding-left: 35px;
+}
+
+.contact-me-form-input.option-menu {
+    padding-left: 20px;
+}
+
+#contact-msg {
+    padding: 10px;
 }
 
 .reason-for-contact {
     border-style: none;
+    font-family: 'Raleway';
 }
 
 .send-btn {
-    margin: 0 auto;
+    margin: 20px auto 0;
     width: 35%;
+    height: 50px;
     font-size: 18px;
     background-color: #373F51;
     border-radius: 10px;
     border-style: none;
-    color: #eeeef1
+    color: #eeeef1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
