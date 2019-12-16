@@ -21,6 +21,7 @@ header {
     display: flex;
     padding-left: 0;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .nav-item {
@@ -36,7 +37,7 @@ header {
 .nav-item:hover {
     letter-spacing: 4px;
     color: #adb1b9;
-    border-bottom: 1.5px dotted #adb1b9;
+    border-bottom: 1.5px solid #adb1b9;
 }
 
 .proyects-nav-item {
@@ -77,12 +78,55 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-top: 100px; */
+}
+
+.photo-container {
+    position: relative;
+}
+
+.photo-banner {
+    display: none;
+}
+
+figure {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+figcaption {
+    font-family: 'Calistoga';
+    font-size: 0px;
+    color: honeydew;
+    text-align: center;
+    line-height: 300px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    top: 15px;
+    left: 39px;
+    transition: .3s;
+}
+
+img {
+    transition: .3s;
+}
+
+.photo-container:hover figcaption {
+    border: 1.5px solid honeydew;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(.9);
+}
+
+.photo-container:hover img {
+    transform: scale(1.2);
 }
 
 .owner-photo {
-    width: 300px;
-    border-radius: 50%;
+    width: 110%; 
 }
 
 .owner-name {
@@ -94,14 +138,18 @@ header {
 .owner-information {
     font-family: 'Raleway';
     font-size: 18px;
+    text-align: center;
 }
 
 .skills {
     background-color: #4b4b79;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-title {
+    width: 100%;
     color: #eeeef1;
     font-family: 'Calistoga';
     font-weight: 300;
@@ -118,6 +166,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
+    margin: 0;
 }
 
 /* .skill {
@@ -126,9 +176,9 @@ header {
 
 .list-container {
     background-color: #eeeef1;
-    width: 200px;
-    height: 200px;
-    margin: 0 25px;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -136,7 +186,7 @@ header {
 }
 
 .skill-img {
-    width: 130px;
+    width: 70%;
 }
 
 .proyects {
@@ -268,10 +318,16 @@ input:invalid:not(:placeholder-shown) ~ .invalid-icon {
 }
 
 .send-btn:hover {
+    cursor: pointer;
     font-size: 20px;
     letter-spacing: 1px;
     border: 1px dashed #eeeef1;
     background: none;
+}
+
+.send-btn:active {
+    background-color: rgb(21, 32, 59);
+    border-style: none;
 }
 
 
@@ -304,14 +360,26 @@ footer {
     text-decoration: none;
 }
 
+.socialnetworks-column {
+    width: 35%;
+    padding-right: 0;
+}
+
+.quote-column {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .footer-quote {
+    max-width: 400px;
     background-color: rgb(71, 129, 121);
     padding: 10px 20px;
     border-radius: 10px;
 }
 
 .footer-quote-text {
-    width: 400px;
+    width: 100%;
 }
 
 .footer-copyright {
@@ -325,4 +393,64 @@ footer {
     margin-bottom: 0;
     color: honeydew;
     font-family: 'Raleway';
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 800px) {
+    .nav-items > li:nth-child(1) {
+        display: none;
+    }
+
+    .photo-container {
+        display: none;
+    }
+
+    .photo-banner {
+        display: block;
+        overflow: hidden;
+        width: 90%;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .owner-photo {
+        width: 100%;
+    }
+
+    .owner-name {
+        font-size: 38px;
+    }
+
+    .owner-information {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .list-container {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+    }
+
+    .list-element {
+        font-size: 16px;
+    }
+
+    .contact-me-form {
+        transform: scale(.9);
+    }
+
+    .socialnetworks-column {
+        width: 90%;
+    }
+
+    .quote-column {
+        display: none;
+    }
 }

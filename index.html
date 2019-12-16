@@ -32,7 +32,15 @@
 
     <main>
         <section id="aboutme" class="main-content presentation">
-            <img class="owner-photo" src="imgs/foto2.jpg" />
+            <div class="photo-container">
+                <figure>
+                    <img class="owner-photo" src="imgs/foto2.jpg" />
+                </figure>
+                <figcaption>¡Hola!</figcaption>
+            </div>
+            <div class="photo-banner">
+                <img class="owner-photo" src="imgs/foto2.jpg" />
+            </div>
             <h1 class="owner-name">Florencia Holzmann</h1>
             <p class="owner-information">Estudiante de desarrollo Frontend / Traductora&Editora / Amante de idiomas inútiles / Ravenclaw</p>
             <p class="owner-information">Soy excesivamente curiosa y me encanta aprender cosas nuevas. Vivo en el campo. En otra vida viví en la Grecia Antigua.</p>
@@ -40,52 +48,70 @@
 
         <section id="skills" class="main-content skills">
             <h2 class="section-title">SKILLS</h2>
-            <ul class="main-contest-list">
+            <ul class="main-contest-list">             
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/html.png" class="skill-img"></li>
+                    <img src="imgs/html.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/css.png" class="skill-img"></li>
+                    <img src="imgs/css.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/js.png" class="skill-img"></li>
+                    <img src="imgs/js.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/bootstrap.png" class="skill-img"></li>
+                    <img src="imgs/git.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/firebase.png" class="skill-img"></li>
+                    <img src="imgs/responsive.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/git.png" class="skill-img"></li>
+                    <img src="imgs/react.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/react.png" class="skill-img"></li>
+                    <img src="imgs/bootstrap.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/responsive.png" class="skill-img"></li>
+                    <img src="imgs/sass.png" class="skill-img">
                 </div>
+            </li>
+            <li class="skill">
                 <div class="list-container">
-                    <li class="skill"><img src="imgs/sass.png" class="skill-img"></li>
+                    <img src="imgs/firebase.png" class="skill-img">
                 </div>
+            </li>
             </ul>
         </section>
 
         <section id="proyects" class="main-content proyects">
             <h2 class="section-title">PROYECTOS</h2>
-            <ul class="main-contest-list">
-                <div class="list-container">
-                    <li class="list-element">CARD</li>
-                </div>
-                <div class="list-container">
-                    <li class="list-element">WIKI</li>
-                </div>
-                <div class="list-container">
-                    <li class="list-element">QUOTES</li>
-                </div>
-                <div class="list-container">
-                    <li class="list-element">POLAROIDS</li>
-                </div>
+            <ul class="main-contest-list">                
+                <li class="list-element">
+                    <div class="list-container">CARD</div>
+                </li>
+                <li class="list-element">
+                    <div class="list-container">WIKI</div>
+                </li>
+                <li class="list-element">
+                    <div class="list-container">QUOTES</div>
+                </li>
+                <li class="list-element">
+                    <div class="list-container">POLAROIDS</div>
+                </li>
             </ul>
         
         </section>
@@ -137,7 +163,7 @@
 
     <footer>
         <div class="footer-main-part">
-            <div class="footer-column">
+            <div class="footer-column socialnetworks-column">
                 <p id="socialnetworks" class="footer-links-title">REDES</p>
                 <ul class="footer-links">
                     <li class="footer-link"><i class="fab fa-twitter"></i> <a class="footer-social-network-user" target="_blank" href="https://www.twitter.com/telemaca">telemaca</a></li>
@@ -148,7 +174,7 @@
                 </ul>
             </div>
     
-            <div class="footer-column">
+            <div class="footer-column quote-column">
                 <div class="footer-quote">
                     <p class="footer-quote-text">"In the beginning, the Universe was created. This has made a lot of people very angry and has been widely regarded as a bad move."</p>
                     <p class="footer-quote-author">—Douglas Adams, <i>The Hitchhiker's Guide to the Galaxy</i></p>
