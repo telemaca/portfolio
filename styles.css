@@ -151,7 +151,6 @@ img {
 }
 
 .section-title {
-    width: 50%;
     color: #eeeef1;
     font-family: 'Raleway';
     font-weight: 700;
@@ -319,12 +318,11 @@ input:invalid:not(:placeholder-shown) ~ .invalid-icon {
 
 .reason-for-contact {
     border-style: none;
-
 }
 
 .send-btn {
     margin: 20px auto 0;
-    width: 35%;
+    width: 145px;
     height: 50px;
     font-size: 18px;
     background-color: #7f5af0;
@@ -444,18 +442,19 @@ footer {
         display: none;
     }
 
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
     .owner-name {
         font-size: 38px;
+        margin-bottom: 5px;
     }
 
     .owner-information {
         font-size: 16px;
         width: 80%;
-    }
-
-    .section-title {
-        font-size: 30px;
-        margin-bottom: 20px;
     }
 
     .list-container {
@@ -472,9 +471,93 @@ footer {
         transform: scale(.9);
     }
 
-    
-
     .quote-column {
         display: none;
+    }
+}
+
+@media(max-width:770px) {
+    .skills .main-contest-list{
+        max-width: 500px;
+    }
+}
+
+@media(max-width:700px){
+    .nav-item:hover {
+        letter-spacing: 0px;
+        border-bottom: none;
+    }
+}
+
+@media(max-width:450px) {
+    header{
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .nav-items{
+        margin-top: 7px;
+    }
+
+    .nav-items > li{
+        margin: 0;
+    }
+
+    .submenu{
+        text-align: left;
+        width: 100px;
+        top: 20px;
+    }
+
+    .submenu-item{
+        padding: 10px;
+    }
+
+    .main-content{
+        padding: 50px 25px 40px 25px;
+    }
+
+    .owner-photo{
+        width: 150px;
+    }
+
+    .section-title{
+        margin: 5px;
+    }
+
+    .owner-name{
+        max-width: 150px;
+        font-size: 30px;
+    }
+
+    .owner-information{
+        font-size: 14px;
+    }
+
+    .list-container{
+        height: 60px;
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .list-container:hover{
+        transform: none;
+    }
+
+    .footer-link:hover .socialnetwork-icon{
+        transform: none;
+    }
+
+    .footer-link{
+        width: 170px;
+    }
+
+    .footer-link:hover{
+        letter-spacing: 0;
+        transform: scale(1.1);
+    }  
+
+    .footer-copyright{
+        font-size: 12px;
     }
 }
