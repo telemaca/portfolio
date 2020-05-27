@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: #141414;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.bar {
+  height: 30%;
+  width: 2%;
+  border-radius: 20px;
+  left: -10%;
+  animation: barMove 17s infinite both linear;
+  position: absolute;
+}
+.bar:nth-child(1) {
+  animation-delay: 1s;
+}
+.bar:nth-child(2) {
+  animation-delay: 2s;
+}
+.bar:nth-child(3) {
+  animation-delay: 3s;
+}
+.bar:nth-child(4) {
+  animation-delay: 4s;
+}
+.bar:nth-child(5) {
+  animation-delay: 5s;
+}
+.bar:nth-child(6) {
+  animation-delay: 6s;
+}
+.bar:nth-child(7) {
+  animation-delay: 7s;
+}
+.bar:nth-child(8) {
+  animation-delay: 8s;
+}
+.bar:nth-child(9) {
+  animation-delay: 9s;
+}
+.bar:nth-child(10) {
+  animation-delay: 10s;
+}
+.bar:nth-child(11) {
+  animation-delay: 11s;
+}
+.bar:nth-child(12) {
+  animation-delay: 12s;
+}
+.bar:nth-child(13) {
+  animation-delay: 13s;
+}
+.bar:nth-child(14) {
+  animation-delay: 14s;
+}
+.bar:nth-child(15) {
+  animation-delay: 15s;
+}
+.bar:nth-child(16) {
+  animation-delay: 16s;
+}
+.bar:nth-child(17) {
+  animation-delay: 17s;
+}
+.bar:nth-child(18) {
+  animation-delay: 18s;
+}
+.bar:nth-child(19) {
+  animation-delay: 19s;
+}
+.bar:nth-child(20) {
+  animation-delay: 20s;
+}
+
+@keyframes barMove {
+  0% {
+    background-color: yellow;
+    height: 30%;
+    left: -2%;
+  }
+  10% {
+    background-color: orange;
+    height: 80%;
+  }
+  20% {
+    background-color: orangered;
+    height: 30%;
+  }
+  30% {
+    background-color: firebrick;
+    height: 80%;
+  }
+  40% {
+    background-color: blueviolet;
+    height: 30%;
+  }
+  50% {
+    background-color: purple;
+    height: 80%;
+  }
+  60% {
+    background-color: blue;
+    height: 30%;
+  }
+  70% {
+    background-color: teal;
+    height: 80%;
+  }
+  80% {
+    background-color: turquoise;
+    height: 30%;
+  }
+  90% {
+    background-color: green;
+    height: 80%;
+  }
+  100% {
+    background-color: greenyellow;
+    height: 30%;
+    left: 100%;
+  }
+}

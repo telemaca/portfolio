@@ -1,202 +1,304 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Florencia Holzmann</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Calistoga:200,400,600|Open+Sans:200,300,400,700|Pacifico|Raleway:100,200,300,400,700,900&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calistoga:200,400,600|Open+Sans:200,300,400,700|Pacifico|Raleway:100,200,300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <script></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <ul class="nav-items">
-                <li><a class="nav-item" href="#aboutme">SOBRE MI</a></li>
-                <li><a class="nav-item" href="#skills">SKILLS</a></li>
-                <li class="proyects-nav-item">
-                    <a class="nav-item" href="#proyects">PROYECTOS</a>
-                    <ul class="submenu">
-                        <li class="submenu-item">CARD</li>
-                        <li class="submenu-item">WIKI</li>
-                        <li class="submenu-item">QUOTES</li>
-                        <li class="submenu-item">POLAROIDS</li>
-                    </ul>
-                </li>
-                <li><a class="nav-item" href="#contactme">CONTACTAME</a></li>
-                <li><a class="nav-item" href="#socialnetworks">REDES</a></li>
+      <nav>
+        <ul class="nav-items">
+          <li><a class="nav-item" href="#aboutme">SOBRE MI</a></li>
+          <li><a class="nav-item" href="#skills">SKILLS</a></li>
+          <li class="proyects-nav-item">
+            <a class="nav-item" href="#proyects">PROYECTOS</a>
+            <ul class="submenu">
+              <li class="submenu-item css-proyects">
+                <a href="#proyects-css">Con CCS puro</a>
+              </li>
+              <li class="submenu-item"><a href="#proyects-js">Con JS vainilla</a>
+              </li></li>
             </ul>
-        </nav>
+          </li>
+          <li><a class="nav-item" href="#contactme">CONTACTAME</a></li>
+          <li><a class="nav-item" href="#socialnetworks">REDES</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="aboutme" class="main-content presentation">
-            <!-- <div class="photo-container">
-                <figure>
-                    <img class="owner-photo" src="imgs/foto2.jpg" />
-                </figure>
-                <figcaption>¡Hola!</figcaption>
+      <section id="aboutme" class="main-content presentation">
+        <img class="owner-photo" src="imgs/Telemaca3.png" />
+        <h1 class="owner-name section-title">Florencia Holzmann</h1>
+        <p class="owner-information">
+          Desarrolladora Frontend / Traductora
+          <span class="ampersand">&&</span> Editora
+          <span class="ampersand">&&</span> Correctora <br />
+          Amante de idiomas inútiles / Ravenclaw
+        </p>
+        <p class="owner-information">
+          Me encanta aprender cosas nuevas. Mis intereses van desde la física
+          hasta la filosofía. Vivo en el campo. En otra vida viví en la Grecia
+          Antigua.
+        </p>
+      </section>
+
+      <section id="skills" class="main-content skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="main-contest-list">
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/html.png" class="skill-img" />
             </div>
-            <div class="photo-banner">
-                <img class="owner-photo" src="imgs/foto2.jpg" />
-            </div> -->
-            <img class="owner-photo" src="imgs/Telemaca3.png" />
-            <h1 class="owner-name section-title">Florencia Holzmann</h1>
-            <p class="owner-information">Estudiante de desarrollo Frontend / Traductora&Editora / Amante de idiomas inútiles / Ravenclaw</p>
-            <p class="owner-information">Soy excesivamente curiosa y me encanta aprender cosas nuevas. Vivo en el campo. En otra vida viví en la Grecia Antigua.</p>
-        </section>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/css.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/js.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/git.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/responsive.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/react.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/bootstrap.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/sass.png" class="skill-img" />
+            </div>
+          </li>
+          <li class="skill">
+            <div class="list-container">
+              <img src="imgs/skills/firebase.png" class="skill-img" />
+            </div>
+          </li>
+        </ul>
+      </section>
 
-        <section id="skills" class="main-content skills">
-            <h2 class="section-title">Skills</h2>
-            <ul class="main-contest-list">             
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/html.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/css.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/js.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/git.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/responsive.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/react.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/bootstrap.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/sass.png" class="skill-img">
-                </div>
-            </li>
-            <li class="skill">
-                <div class="list-container">
-                    <img src="imgs/firebase.png" class="skill-img">
-                </div>
-            </li>
-            </ul>
-        </section>
+      <section id="proyects-css" class="main-content proyects">
+        <h2 class="section-title">Proyectos con CSS puro</h2>
 
-        <section id="proyects" class="main-content proyects">
-            <h2 class="section-title">Proyectos</h2>
-            <ul class="main-contest-list">                
-                <li class="list-element">
-                    <div class="list-container">CARD</div>
-                </li>
-                <li class="list-element">
-                    <div class="list-container">WIKI</div>
-                </li>
-                <li class="list-element">
-                    <div class="list-container">QUOTES</div>
-                </li>
-                <li class="list-element">
-                    <div class="list-container">POLAROIDS</div>
-                </li>
-            </ul>
-        
-        </section>
-        <section id="contactme" class="main-content contactme">
-            <h2 class="section-title">Contactame</h2>
-            <form class="contact-me-form" action="javascript:void(0)">
-                <div class="contact-information"> 
-                    <label for="contact-name">Nombre:</label>
-                    <div class="form-imput-container">
-                        <input required placeholder="Ingrese su nombre" type="text" id="contact-name" class="contact-me-form-input">
-                        <i class="fas fa-user user-icon"></i>
-                        <i class="fas fa-check-circle valid-icon"></i>
-                        <i class="fas fa-times-circle invalid-icon"></i>
-                    </div>
-                </div>
-                <div class="contact-information">
-                    <label for="contact-mail">Mail:</label>
-                    <div class="form-imput-container">
-                        <input required placeholder="Ingrese su mail" type="email" id="contact-mail" class="contact-me-form-input">
-                        <i class="far fa-envelope mail-icon"></i>
-                        <i class="fas fa-check-circle valid-icon"></i>
-                        <i class="fas fa-times-circle invalid-icon"></i>
-                    </div>
-                </div>
-                <div class="contact-information">
-                    <label>¿Cómo me conociste?</label>
-                    <select class="contact-me-form-input option-menu">
-                        <option>LinkedIn</option>
-                        <option>Twitter</option>
-                        <option>Facebook</option>
-                        <option>Referidos</option>
-                        <option>Otro</option>
-                    </select>
-                </div>               
-                <fieldset class="reason-for-contact"> <legend>Motivo:</legend>
-                    <div class="reason">
-                        <input type="radio" name="reason" id="job-offer"><label for="job-offer">Oferta de empleo</label>
-                    </div>
-                    <div class="reason">
-                        <input type="radio" name="reason" id="work-proposition"><label for="work-proposition">Propuesta de trabajo</label>
-                    </div>
-                    <div class="reason">
-                        <input type="radio" name="reason" id="question"><label for="question">Consulta</label>
-                    </div>
-                    <div class="reason">
-                        <input type="radio" name="reason" id="other"><label for="other">Otro</label>
-                    </div>
-                </fieldset>
-                <div class="contact-information">
-                    <label for="contact-msg">Comentarios</label>
-                    <textarea placeholder="Escriba su mensaje" cols="50" rows="5" id="contact-msg" class="contact-me-form-input"></textarea>
-                </div>
-                <button class="contact-information send-btn" type="submit">ENVIAR</button>
-            </form>
-        </section>
+        <div class="proyects-container">
+          <div class="proyect">
+            <a class="proyect-link" href="html/buttons.html"></a>
+          </div>
+
+          <div class="proyect">
+            <a class="proyect-link" href="html/bars.html"></a>
+          </div>
+
+          <div class="proyect">
+            <a class="proyect-link" href="html/flores.html"></a>
+          </div>
+
+          <div class="proyect">
+            <a class="proyect-link" href="html/polaroids.html"></a>
+          </div>
+
+          <div class="proyect">
+            <a class="proyect-link" href="html/slider.html"></a>
+          </div>
+        </div>
+
+      </section>
+      <section id="proyects-js" class="main-content proyects">
+        <h2 class="section-title">Proyectos con JS vainilla</h2>
+        <div class="js-protects-wrapper">
+          <a href="https://rockpaperscissorslizardspock.netlify.app/">
+            <img src="imgs/proyects/rockpaperscissorslizardscpock.JPG">
+          </a>
+        </div>
+      </section>
+
+      <section id="contactme" class="main-content contactme">
+        <h2 class="section-title">Contactame</h2>
+        <form class="contact-me-form" action="https://formsubmit.co/florholzmann@gmail.com" method="POST">
+          <div class="contact-information">
+            <label for="contact-name">Nombre:</label>
+            <div class="form-imput-container">
+              <input
+                required
+                placeholder="Ingrese su nombre"
+                type="text"
+                id="contact-name"
+                class="contact-me-form-input"
+                name="nombre"
+              />
+              <i class="fas fa-user user-icon"></i>
+              <i class="fas fa-check-circle valid-icon"></i>
+              <i class="fas fa-times-circle invalid-icon"></i>
+            </div>
+          </div>
+          <div class="contact-information">
+            <label for="contact-mail">Mail:</label>
+            <div class="form-imput-container">
+              <input
+                required
+                placeholder="Ingrese su mail"
+                type="email"
+                id="contact-mail"
+                class="contact-me-form-input"
+                name="email"
+              />
+              <i class="far fa-envelope mail-icon"></i>
+              <i class="fas fa-check-circle valid-icon"></i>
+              <i class="fas fa-times-circle invalid-icon"></i>
+            </div>
+          </div>
+          <div class="contact-information">
+            <label>¿Cómo me conociste?</label>
+            <select name="como-me-conoces" class="contact-me-form-input option-menu">
+              <option>LinkedIn</option>
+              <option>Twitter</option>
+              <option>Facebook</option>
+              <option>Referidos</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <fieldset name="razon-de-contacto" class="reason-for-contact">
+            <legend>Motivo:</legend>
+            <div class="reason">
+              <input type="radio" name="reason" id="job-offer" /><label
+                for="job-offer"
+                >Oferta de empleo</label
+              >
+            </div>
+            <div class="reason">
+              <input type="radio" name="reason" id="work-proposition" /><label
+                for="work-proposition"
+                >Propuesta de trabajo</label
+              >
+            </div>
+            <div class="reason">
+              <input type="radio" name="reason" id="question" /><label
+                for="question"
+                >Consulta</label
+              >
+            </div>
+            <div class="reason">
+              <input type="radio" name="reason" id="other" /><label for="other"
+                >Otro</label
+              >
+            </div>
+          </fieldset>
+          <div class="contact-information">
+            <label for="contact-msg">Comentarios</label>
+            <textarea
+              placeholder="Escriba su mensaje"
+              cols="50"
+              rows="5"
+              id="contact-msg"
+              class="contact-me-form-input"
+              name="comentarios"
+            ></textarea>
+          </div>
+          <button class="contact-information send-btn" type="submit">
+            ENVIAR
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-main-part">
-            <div class="footer-column socialnetworks-column">
-                <p id="socialnetworks" class="footer-links-title">REDES</p>
-                <ul class="footer-links">
-                    <li class="footer-link"><i class="fab fa-twitter socialnetwork-icon"></i> <a class="footer-social-network-user" target="_blank" href="https://www.twitter.com/telemaca">telemaca</a></li>
-                    <li class="footer-link"><i class="fab fa-facebook socialnetwork-icon"></i> <a class="footer-social-network-user" target="_blank" href="https://www.facebook.com/Telemaca">Florencia Holzmann</a></li>
-                    <li class="footer-link"><i class="fab fa-instagram socialnetwork-icon"></i> <a class="footer-social-network-user" target="_blank" href="https://www.instagram.com/telemaca86">telemaca86</a></li>
-                    <li class="footer-link"><i class="fab fa-linkedin-in socialnetwork-icon"></i> <a class="footer-social-network-user" target="_blank" href="https://www.linkedin.com/in/florencia-holzmann-39189a71/">Florencia Holzmann</a></li>
-                    <li class="footer-link"><i class="fab fa-github socialnetwork-icon"></i> <a class="footer-social-network-user" target="_blank" href="https://www.github.com/telemaca">telemaca</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-column quote-column">
-                <div class="footer-quote">
-                    <p class="footer-quote-text">"In the beginning, the Universe was created. This has made a lot of people very angry and has been widely regarded as a bad move."</p>
-                    <p class="footer-quote-author">—Douglas Adams, <i>The Hitchhiker's Guide to the Galaxy</i></p>
-                </div>
-            </div>
+      <div class="footer-main-part">
+        <div class="footer-column socialnetworks-column">
+          <p id="socialnetworks" class="footer-links-title">REDES</p>
+          <ul class="footer-links">
+            <li class="footer-link">
+              <i class="fab fa-twitter socialnetwork-icon"></i>
+              <a
+                class="footer-social-network-user"
+                target="_blank"
+                href="https://www.twitter.com/telemaca"
+                >telemaca</a
+              >
+            </li>
+            <li class="footer-link">
+              <i class="fab fa-facebook socialnetwork-icon"></i>
+              <a
+                class="footer-social-network-user"
+                target="_blank"
+                href="https://www.facebook.com/Telemaca"
+                >Florencia Holzmann</a
+              >
+            </li>
+            <li class="footer-link">
+              <i class="fab fa-instagram socialnetwork-icon"></i>
+              <a
+                class="footer-social-network-user"
+                target="_blank"
+                href="https://www.instagram.com/telemaca86"
+                >telemaca86</a
+              >
+            </li>
+            <li class="footer-link">
+              <i class="fab fa-linkedin-in socialnetwork-icon"></i>
+              <a
+                class="footer-social-network-user"
+                target="_blank"
+                href="https://www.linkedin.com/in/florencia-holzmann-39189a71/"
+                >Florencia Holzmann</a
+              >
+            </li>
+            <li class="footer-link">
+              <i class="fab fa-github socialnetwork-icon"></i>
+              <a
+                class="footer-social-network-user"
+                target="_blank"
+                href="https://www.github.com/telemaca"
+                >telemaca</a
+              >
+            </li>
+          </ul>
         </div>
 
-        <div class="footer-copyright">
-            <p class="footer-copyright-text">© 2019 - Todos los derechos reservados</p>
+        <div class="footer-column quote-column">
+          <div class="footer-quote">
+            <p class="footer-quote-text">
+              "In the beginning, the Universe was created. This has made a lot
+              of people very angry and has been widely regarded as a bad move."
+            </p>
+            <p class="footer-quote-author">
+              —Douglas Adams, <i>The Hitchhiker's Guide to the Galaxy</i>
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p class="footer-copyright-text">
+          © 2019 - Todos los derechos reservados
+        </p>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

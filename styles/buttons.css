@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-btn {
+  position: absolute;
+  color: floralwhite;
+  font-size: 36px;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.buttons-section {
+  height: 30vh;
+  background-color: royalblue;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: "Raleway";
+  color: floralwhite;
+  font-size: 36px;
+  padding: 40px 0 20px 0;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.button-container {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 200px;
+  transition: 0.3s ease-in;
+}
+
+button {
+  font-family: "Roboto";
+  color: floralwhite;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 50px;
+  width: 200px;
+  margin-right: 15px;
+  background: none;
+  border: 2px solid floralwhite;
+}
+
+.button3 {
+  background-color: rgb(30, 43, 80);
+  border: none;
+  transition: 0.3s;
+}
+
+.button1 {
+  position: absolute;
+}
+
+.hover-effect1 {
+  background-color: floralwhite;
+}
+
+.hover-effect {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  position: absolute;
+}
+
+.hover-effect0 {
+  top: -50px;
+}
+
+.hover-effect2 {
+  transform: skew(20deg, 70deg);
+}
+
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-button2 {
+  transition: 0.2s;
+}
+
+.button-container:hover .hover-effect0 {
+  position: absolute;
+  top: 0;
+}
+
+.button-container:hover .hover-effect2 {
+  transform: skew(0);
+}
+.button-container:hover .button1 {
+  color: royalblue;
+}
+
+.button-container:hover .text-button2 {
+  transform: translateY(30px);
+}
+
+.fa-folder-open {
+  color: floralwhite;
+  font-size: 30px;
+}
+
+.button2 {
+  margin-right: 0;
+}
+
+.button-container:hover .button3 {
+  background-color: royalblue;
+  border: 1px dotted rgb(30, 43, 80);
+  color: rgb(30, 43, 80);
+}
+
+/* SECCIÓN DE FOTOS */
+
+.pictures-section {
+  height: 70vh;
+  background-color: firebrick;
+}
+
+.pic-container {
+  flex-wrap: wrap;
+}
+
+figure {
+  width: 30%;
+  margin: 0;
+  height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+img {
+  width: 130%;
+  transition: 0.4s;
+}
+
+figcaption {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+}
+
+.img1 {
+  transform: scale(1.1);
+}
+
+.caption {
+  font-family: "Montserrat";
+  color: snow;
+  transition: 0.3s;
+}
+
+.caption-title {
+  width: 80%;
+  font-size: 30px;
+  position: absolute;
+  left: 20px;
+}
+
+.caption-info {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 80%;
+}
+
+.figcaption1 > .caption-title {
+  font-weight: lighter;
+}
+
+.figcaption1 > .caption-info {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: end;
+  margin: 0;
+  padding: 30px;
+}
+
+figure:hover .figcaption1 > .caption-title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  padding-left: 15px;
+}
+
+figure:hover .figcaption1 > .caption-info {
+  transform: translateY(10px);
+}
+
+.figcaption3 {
+  transition: 0.3s;
+}
+
+.figcaption3 > .caption-info {
+  position: absolute;
+  right: 10px;
+  width: 60%;
+}
+
+figure:hover .img1 {
+  transform: scale(1);
+}
+
+figure:hover .img2 {
+  transform: translateX(20px);
+}
+
+figure:hover .caption-info.caption {
+  position: absolute;
+  bottom: 10px;
+}
+
+figure:hover .figcaption2 > .caption-title {
+  padding: 10px;
+  font-weight: lighter;
+  border-bottom: 2px solid snow;
+}
+
+figure:hover .caption-title.caption {
+  transform: translateY(-5px);
+}
+
+figure:hover .img3 {
+  transform: scale(1.2);
+}
+
+figure:hover figcaption {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+figure:hover .figcaption2 {
+  background-color: rgba(4, 22, 59, 0.4);
+}
+
+figure:hover .figcaption2 > .caption-info {
+  font-size: 14px;
+}
+
+figure:hover .figcaption3 {
+  transform: scale(0.9);
+  border: 1px solid snow;
+}
+
+figure:hover .figcaption3 > .caption-title {
+  transform: translate(20px, -5px);
+  letter-spacing: 10px;
+  font-size: 34px;
+}
+
+figure:hover .figcaption3 > .caption-info {
+  transform: translate(-20px, 10px);
+}
