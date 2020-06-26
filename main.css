@@ -164,6 +164,7 @@ header {
 
 .proyects {
   background-color: #16161a;
+  height: 100%;
   padding-top: 50px;
   display: flex;
 }
