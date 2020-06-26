@@ -22,13 +22,6 @@
           <li><a class="nav-item" href="#skills">SKILLS</a></li>
           <li class="proyects-nav-item">
             <a class="nav-item" href="#proyects">PROYECTOS</a>
-            <ul class="submenu">
-              <li class="submenu-item css-proyects">
-                <a href="#proyects-css">Con CCS puro</a>
-              </li>
-              <li class="submenu-item"><a href="#proyects-js">Con JS vainilla</a>
-              </li></li>
-            </ul>
           </li>
           <li><a class="nav-item" href="#contactme">CONTACTAME</a></li>
           <li><a class="nav-item" href="#socialnetworks">REDES</a></li>
@@ -38,8 +31,10 @@
 
     <main>
       <section id="aboutme" class="main-content presentation">
-        <img class="owner-photo" src="imgs/Telemaca3.png" />
-        <h1 class="owner-name section-title">Florencia Holzmann</h1>
+        <div class="owner-title-container">
+          <img class="owner-photo" src="imgs/Telemaca3.png" />
+          <h1 class="owner-name section-title">Florencia <br />Holzmann</h1>
+        </div>
         <p class="owner-information">
           Desarrolladora Frontend / Traductora
           <span class="ampersand">&&</span> Editora
@@ -54,7 +49,7 @@
       </section>
 
       <section id="skills" class="main-content skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title">SKILLS</h2>
         <ul class="main-contest-list">
           <li class="skill">
             <div class="list-container">
@@ -104,127 +99,175 @@
         </ul>
       </section>
 
-      <section id="proyects-css" class="main-content proyects">
-        <h2 class="section-title">Proyectos con CSS puro</h2>
+      <section id="proyects" class="main-content proyects">
+        <h2 class="section-title">PROYECTOS</h2>
 
         <div class="proyects-container">
-          <div class="proyect">
-            <a class="proyect-link" href="html/buttons.html"></a>
+          <div class="proyect-container">
+            <a class="proyect-link" href="html/buttons.html">
+              <div class="proyect proyect-1"></div>
+            </a>
+            <div class="proyect-title">
+              <h3>Botones & Imágenes</h3>
+              <p>HTML y CSS</p>
+            </div>
           </div>
 
-          <div class="proyect">
-            <a class="proyect-link" href="html/bars.html"></a>
+          <div class="proyect-container">
+            <a class="proyect-link" href="html/bars.html">
+              <div class="proyect proyect-2"></div>
+            </a>
+            <div class="proyect-title">
+              <h3>Ecualizador</h3>
+              <p>HTML y animaciones de CSS</p>
+            </div>
           </div>
 
-          <div class="proyect">
-            <a class="proyect-link" href="html/flores.html"></a>
+          <div class="proyect-container">
+            <a class="proyect-link" href="html/flores.html">
+              <div class="proyect proyect-3"></div>
+            </a>
+            <div class="proyect-title">
+              <h3>Flores animadas</h3>
+              <p>HTML y animaciones de CSS</p>
+            </div>
           </div>
 
-          <div class="proyect">
-            <a class="proyect-link" href="html/polaroids.html"></a>
+          <div class="proyect-container">
+            <a class="proyect-link" href="html/polaroids.html">
+              <div class="proyect proyect-4"></div>
+            </a>
+            <div class="proyect-title">
+              <h3>Polaroids</h3>
+              <p>HTML y transiciones de CSS</p>
+            </div>
           </div>
 
-          <div class="proyect">
-            <a class="proyect-link" href="html/slider.html"></a>
+          <div class="proyect-container">
+            <a class="proyect-link" href="html/slider.html">
+              <div class="proyect proyect-5"></div>
+            </a>
+            <div class="proyect-title">
+              <h3>Slider</h3>
+              <p>HTML y CSS</p>
+            </div>
           </div>
-        </div>
 
-      </section>
-      <section id="proyects-js" class="main-content proyects">
-        <h2 class="section-title">Proyectos con JS vainilla</h2>
-        <div class="js-protects-wrapper">
-          <a href="https://rockpaperscissorslizardspock.netlify.app/">
-            <img src="imgs/proyects/rockpaperscissorslizardscpock.JPG">
-          </a>
+          <div class="proyect-container">
+            <a
+              class="proyect-link"
+              href="https://rockpaperscissorslizardspock.netlify.app/"
+            >
+              <div class="proyect proyect-6"></div>
+            </a>
+
+            <div class="proyect-title">
+              <h3>Piedra, papel, tijera, lagartija, Spock</h3>
+              <p>JS vainilla</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="contactme" class="main-content contactme">
-        <h2 class="section-title">Contactame</h2>
-        <form class="contact-me-form" action="https://formsubmit.co/0f977f95702e413e2dbde61e8049b1c4" method="POST">
-          <div class="contact-information">
-            <label for="contact-name">Nombre:</label>
-            <div class="form-imput-container">
-              <input
-                required
-                placeholder="Ingrese su nombre"
-                type="text"
-                id="contact-name"
+        <h2 class="section-title">MANDAME UN MENSAJE</h2>
+        <div class="contactme-container">
+          <div class="contactme-img">
+            <img src="imgs/oldphone.png" alt="" />
+          </div>
+          <form
+            class="contactme-form"
+            action="https://formsubmit.co/0f977f95702e413e2dbde61e8049b1c4"
+            method="POST"
+          >
+            <div class="contact-information">
+              <label for="contact-name">Nombre:</label>
+              <div class="form-imput-container">
+                <input
+                  required
+                  placeholder="Ingrese su nombre"
+                  type="text"
+                  id="contact-name"
+                  class="contact-me-form-input"
+                  name="nombre"
+                />
+                <i class="fas fa-user user-icon"></i>
+                <i class="fas fa-check-circle valid-icon"></i>
+                <i class="fas fa-times-circle invalid-icon"></i>
+              </div>
+            </div>
+            <div class="contact-information">
+              <label for="contact-mail">Mail:</label>
+              <div class="form-imput-container">
+                <input
+                  required
+                  placeholder="Ingrese su mail"
+                  type="email"
+                  id="contact-mail"
+                  class="contact-me-form-input"
+                  name="email"
+                />
+                <i class="far fa-envelope mail-icon"></i>
+                <i class="fas fa-check-circle valid-icon"></i>
+                <i class="fas fa-times-circle invalid-icon"></i>
+              </div>
+            </div>
+            <div class="contact-information">
+              <label>¿Cómo me conociste?</label>
+              <select
+                name="como-me-conoces"
+                class="contact-me-form-input option-menu"
+              >
+                <option>LinkedIn</option>
+                <option>Twitter</option>
+                <option>Facebook</option>
+                <option>Referidos</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <!-- <fieldset name="razon-de-contacto" class="reason-for-contact">
+              <legend>Motivo:</legend>
+              <div class="reason">
+                <input type="radio" name="reason" id="job-offer" /><label
+                  for="job-offer"
+                  >Oferta de empleo</label
+                >
+              </div>
+              <div class="reason">
+                <input type="radio" name="reason" id="work-proposition" /><label
+                  for="work-proposition"
+                  >Propuesta de trabajo</label
+                >
+              </div>
+              <div class="reason">
+                <input type="radio" name="reason" id="question" /><label
+                  for="question"
+                  >Consulta</label
+                >
+              </div>
+              <div class="reason">
+                <input type="radio" name="reason" id="other" /><label
+                  for="other"
+                  >Otro</label
+                >
+              </div>
+            </fieldset> -->
+            <div class="contact-information">
+              <label for="contact-msg">Comentarios</label>
+              <textarea
+                placeholder="Escriba su mensaje"
+                cols="50"
+                rows="5"
+                id="contact-msg"
                 class="contact-me-form-input"
-                name="nombre"
-              />
-              <i class="fas fa-user user-icon"></i>
-              <i class="fas fa-check-circle valid-icon"></i>
-              <i class="fas fa-times-circle invalid-icon"></i>
+                name="comentarios"
+              ></textarea>
             </div>
-          </div>
-          <div class="contact-information">
-            <label for="contact-mail">Mail:</label>
-            <div class="form-imput-container">
-              <input
-                required
-                placeholder="Ingrese su mail"
-                type="email"
-                id="contact-mail"
-                class="contact-me-form-input"
-                name="email"
-              />
-              <i class="far fa-envelope mail-icon"></i>
-              <i class="fas fa-check-circle valid-icon"></i>
-              <i class="fas fa-times-circle invalid-icon"></i>
-            </div>
-          </div>
-          <div class="contact-information">
-            <label>¿Cómo me conociste?</label>
-            <select name="como-me-conoces" class="contact-me-form-input option-menu">
-              <option>LinkedIn</option>
-              <option>Twitter</option>
-              <option>Facebook</option>
-              <option>Referidos</option>
-              <option>Otro</option>
-            </select>
-          </div>
-          <fieldset name="razon-de-contacto" class="reason-for-contact">
-            <legend>Motivo:</legend>
-            <div class="reason">
-              <input type="radio" name="reason" id="job-offer" /><label
-                for="job-offer"
-                >Oferta de empleo</label
-              >
-            </div>
-            <div class="reason">
-              <input type="radio" name="reason" id="work-proposition" /><label
-                for="work-proposition"
-                >Propuesta de trabajo</label
-              >
-            </div>
-            <div class="reason">
-              <input type="radio" name="reason" id="question" /><label
-                for="question"
-                >Consulta</label
-              >
-            </div>
-            <div class="reason">
-              <input type="radio" name="reason" id="other" /><label for="other"
-                >Otro</label
-              >
-            </div>
-          </fieldset>
-          <div class="contact-information">
-            <label for="contact-msg">Comentarios</label>
-            <textarea
-              placeholder="Escriba su mensaje"
-              cols="50"
-              rows="5"
-              id="contact-msg"
-              class="contact-me-form-input"
-              name="comentarios"
-            ></textarea>
-          </div>
-          <button class="contact-information send-btn" type="submit">
-            ENVIAR
-          </button>
-        </form>
+            <button class="contact-information send-btn" type="submit">
+              ENVIAR
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -296,9 +339,10 @@
 
       <div class="footer-copyright">
         <p class="footer-copyright-text">
-          © 2019 - Todos los derechos reservados
+          © 2020 - Todos los derechos reservados
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
